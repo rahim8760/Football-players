@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FootBall Player</title>
+    <title>Make Your Team</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    
+    <header>
+        <div class="text-center mt-2 py-32 bg-slate-900 text-white">
+            <h1 class="text-5xl p-4">
+                Make Your Team
+            </h1>
+            <p>Welcome To Your Own Football World You Can Make Your Team.</p>
+        </div>
+    </header>
+    <main class="px-5 py-4 bg-slate-800 text-white flex">
+        <div class="w-9/12 bg-slate-900 m-2 py-4  grid grid-cols-3 gap-4">
+            <div class="bg-slate-500 rounded  m-auto p-4">
+                <img  src="assets/image/cristiano ronaldo.jpg" alt="">
+                <h1 class="py-2 font-semibold">Cristiano Ronaldo</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded m-auto p-4">
+                <img src="assets/image/joshua kimmich.jpg" alt="">
+                <h1 class="py-2 font-semibold">Joshua Kimmich</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded m-auto p-4">
+                <img src="assets/image/kaka.jpg" alt="">
+                <h1 class="py-2 font-semibold">Kaka</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded m-auto p-4">
+                <img src="assets/image/messi.jpg" alt="">
+                <h1 class="py-2 font-semibold">Messi</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded  m-auto p-4">
+                <img src="assets/image/mohamed sale.jpg" alt="">
+                <h1 class="py-2 font-semibold">Mohamed sale</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded  m-auto p-4">
+                <img src="assets/image/Naimer.jpg" alt="">
+                <h1 class="py-2 font-semibold">Naimer</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded  m-auto p-4">
+                <img src="assets/image/Ozil.jpg" alt="">
+                <h1 class="py-2 font-semibold">Ozil</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+            <div class="bg-slate-500 rounded m-auto p-4">
+                <img src="assets/image/PELÉ.jpg" alt="">
+                <h1 class="py-2 font-semibold">PELÉ</h1>
+                <div class=""><p><span>36</span> Goals . <span>120</span> Assist</p></div>
+                <button class="bg-slate-600 px-5 py-2 mt-2 rounded"> Select</button>
+            </div>
+        </div>
+        <div class="w-3/12 bg-slate-900 my-2 mx-4 p-4 ">
+            <div class="m-auto px-2 py-4 bg-slate-600 rounded">
+                <h1 class="py-2 font-semibold text-center">Selected - V</h1>
+                <p class="py-2 font-semibold">1.<span></span></p>
+                <p class="py-2 font-semibold">2.<span></span></p>
+                <p class="py-2 font-semibold">3.<span></span></p>
+                <p class="py-2 font-semibold">4.<span></span></p>
+                <p class="py-2 font-semibold">5.<span></span></p>
+            </div>
+            <div class="m-auto px-2 py-4 bg-slate-600 mt-5 rounded">
+                <h1 class="py-2 font-semibold text-center">Budget</h1>
+                <div class="text-center">
+                    <div class="py-4 text-center">
+                        <div class="py-4 text-justify">
+                            <h2 class="inline w-4/12">Per Player:</h2>
+                            <input id="clothes" class="inline w-8/12" type="text" placeholder="00">
+                        </div>
+                        <button id="savesubmit" class="px-20 py-2  bg-blue-500">Save</button>
+
+                    </div>
+                    <div class="py-4 text-center">
+                        <h1 class="py-4 text-center">Player Expenses: <span id="expenses">00</span></h1>
+                        <div class="py-4 text-justify">
+                            <h2 class="inline ">Manager:</h2>
+                            <input id="clothes" class="inline w-8/12" type="text" placeholder="00">
+                        </div>
+                        <div class="py-4 text-justify">
+                            <h2 class="inline ">Coach:</h2>
+                            <input id="clothes" class="inline" type="text" placeholder="00">
+                        </div>
+                        <button id="savesubmit" class="px-20 py-2  bg-blue-500">Save</button>
+
+                    </div>
+                    
+                    <h1 class="p-4 text-center">Total: <span id="savingAmount" >00</span></h1>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
 </body>
 </html>
