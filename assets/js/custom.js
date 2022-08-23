@@ -14,11 +14,15 @@ buttonHendelar('playerButton-8','playerName-8');
 document.getElementById('calculetSubmit').addEventListener('click', function () {
     
     
-    const p=inerTextTointValue('playersnum')
-    console.log(p)
+    const players=inerTextTointValue('playersnum');
     const inputValue=inputValueToIntValue('playerCost');
-    const OutputValue=inputValue*p
-    const playerexp=document.getElementById('expenses')
+    if (isNaN(inputValue)) {
+        alert ('input type invalid');
+        return
+    }
+    const OutputValue=inputValue*players;
+    
+    const playerexp=document.getElementById('expenses');
     playerexp.innerText=OutputValue;
 
 })
@@ -29,8 +33,11 @@ document.getElementById('totalSubmit').addEventListener('click', function () {
     const coachCost=inputValueToIntValue('coachCost');
     const playercost=inerTextTointValue('expenses');
 
+    if (isNaN(managerCost) || isNaN(coachCost) ) {
+        alert ('input type invalid');
+        return
+    }
     const newTotalCost=playercost+managerCost+coachCost
-
     const totalexp=document.getElementById('totalCost');
     totalexp.innerText=newTotalCost
 
