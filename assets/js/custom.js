@@ -10,6 +10,7 @@ buttonHendelar('playerButton-8','playerName-8');
 
 
 
+
 document.getElementById('calculetSubmit').addEventListener('click', function () {
     
     
@@ -19,16 +20,5 @@ document.getElementById('calculetSubmit').addEventListener('click', function () 
     const OutputValue=inputValue*p
     const playerexp=document.getElementById('expenses')
     playerexp.innerText=OutputValue;
-
-})
-document.getElementById('totalSubmit').addEventListener('click', function () {
-    const managerCost=inputValueToIntValue('managerCost');
-    const coachCost=inputValueToIntValue('coachCost');
-    const playercost=inerTextTointValue('expenses');
-
-    const newTotalCost=playercost+managerCost+coachCost
-
-    const totalexp=document.getElementById('totalCost');
-    totalexp.innerText=newTotalCost
 
 })
