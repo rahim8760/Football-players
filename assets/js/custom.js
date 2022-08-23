@@ -22,3 +22,16 @@ document.getElementById('calculetSubmit').addEventListener('click', function () 
     playerexp.innerText=OutputValue;
 
 })
+
+
+document.getElementById('totalSubmit').addEventListener('click', function () {
+    const managerCost=inputValueToIntValue('managerCost');
+    const coachCost=inputValueToIntValue('coachCost');
+    const playercost=inerTextTointValue('expenses');
+
+    const newTotalCost=playercost+managerCost+coachCost
+
+    const totalexp=document.getElementById('totalCost');
+    totalexp.innerText=newTotalCost
+
+})
